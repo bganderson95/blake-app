@@ -4,8 +4,9 @@ import hash from "./hash";
 import logo from "./logo.svg";
 import { authEndpoint, clientId, redirectUri, scopes } from "./config";
 import "./App.css";
-import * as $ from "jquery";
+import $ from "jquery";
 import Player from './Components/MusicPlayer/Player';
+import LoginButton from "./Components/UI/Buttons/LoginButton/LoginButton";
 
 class App extends Component {
   constructor() {
@@ -62,14 +63,13 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           {!this.state.token && (
-            <a
-              className="btn btn--loginApp-link"
-              href={`${authEndpoint}?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join(
-                "%20"
-              )}&response_type=token&show_dialog=true`}
-            >
-              Login to Spotify
-            </a>
+            <LoginButton 
+            endpoint={authEndpoint} 
+            clientId={clientId} 
+            redirectUri={redirectUri}
+            scopes={scopes}
+             />
+            //${authEndpoint}?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes
           )}
           {this.state.token && (
             <Player
