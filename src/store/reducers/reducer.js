@@ -1,9 +1,23 @@
-const initialState = {
-    selectedGroup: null
-}
+import * as actionTypes from "../actions/actionTypes";
+import { updateObject } from "../../shared/utility";
 
-const reducer = (state = initialState, action) => {
-    return state;
+const initialState = {
+  selectedGroup: null
 };
 
-export default reducer
+const selectGroup = (state, action) => {
+  return updateObject(state, {
+    selectedGroup: action.group
+  });
+};
+
+const reducer = (state = initialState, action) => {
+  switch (action.type) {
+    case actionTypes.SELECT_GROUP:
+      return selectGroup(state, action);
+    default:
+      return state;
+  }
+};
+
+export default reducer;

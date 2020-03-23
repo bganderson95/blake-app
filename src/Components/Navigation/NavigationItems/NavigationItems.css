@@ -1,17 +1,9 @@
-.GroupList {
+.NavigationItems {
   margin: 0;
   padding: 0;
   list-style: none;
   display: flex;
   flex-flow: column;
+  align-items: flex-start;
   height: 100%;
-}
-
-.GroupList h3 {
-  text-align: center;
-  color: green;
-}
-
-.List {
-  padding: 0;
 }

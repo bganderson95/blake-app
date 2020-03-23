@@ -1,13 +1,25 @@
-import React from 'react';
-import classes from './Group.css';
+import React from "react";
+import * as actions from "../../../store/actions/index";
+import { connect } from "react-redux";
+import GroupLogo from "../../../assets/images/GroupLogo.png";
+import classes from "./Group.css";
 
-const Group = (props) => (
+const Group = props => {
+  return (
     <li className={classes.Group}>
-    <div >
-        <h4>{props.name}</h4>
-        <p>{props.time}</p>
-    </div>
-</li>
-);
+      <img src={GroupLogo} alt={GroupLogo} />
+      <div onClick={() => props.onSelectGroup(props.data)}>
+        <h4>{props.data.name}</h4>
+        <p>{props.data.time}</p>
+      </div>
+    </li>
+  );
+};
 
-export default Group;
+const mapDispatchToProps = dispatch => {
+  return {
+    onSelectGroup: group => dispatch(actions.selectGroup(group))
+  };
+};
+
+export default connect(null, mapDispatchToProps)(Group);

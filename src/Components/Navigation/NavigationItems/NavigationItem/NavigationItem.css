@@ -1,0 +1,7 @@
+.NavigationItem {
+  padding: 10px;
+}
+
+.NavigationItem a.active {
+  background-color: blue;
+}

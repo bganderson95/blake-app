@@ -1,0 +1,9 @@
+.GroupPage {
+  width: 100%;
+  text-align: center;
+}
+
+.GroupPage ul {
+  padding: 0;
+  list-style: none;
+}
