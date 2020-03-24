@@ -1,0 +1,30 @@
+.MakePost {
+  width: 50%;
+  height: 90%;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 20px;
+  border: 2px solid #ccc;
+}
+
+.MakePost form {
+  display: flex;
+  flex-direction: row;
+  align-content: stretch;
+}
+
+.MakePost form input {
+  margin: 10px;
+  width: 100%;
+}
+
+.MakePost form button {
+  background-color: lightblue;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.MakePost form button:disabled {
+  background-color: #ccc;
+}

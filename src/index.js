@@ -9,6 +9,7 @@ import "./index.css";
 import App from "./App";
 import registerServiceWorker from "./registerServiceWorker";
 import groupsReducer from "./store/reducers/groups";
+import postsReducer from "./store/reducers/posts";
 
 const composeEnhancers =
   process.env.NODE_ENV === "development"
@@ -16,7 +17,8 @@ const composeEnhancers =
     : null || compose;
 
 const rootReducer = combineReducers({
-  groups: groupsReducer
+  groups: groupsReducer,
+  posts: postsReducer
 });
 
 const store = createStore(

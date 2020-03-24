@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import Header from "../../Components/Header/Header";
+import MakePost from "../MakePost/MakePost";
+import PostsList from "../../Components/PostsList/PostsList";
 
 import classes from "./GroupPage.css";
 
@@ -24,6 +26,8 @@ class GroupPage extends Component {
               <li key={index}>{member}</li>
             ))}
           </ul>
+          <PostsList />
+          <MakePost />
         </div>
       );
     }

@@ -8,33 +8,6 @@ import Group from "./Group/Group";
 import Spinner from "../UI/Spinner/Spinner";
 import * as actions from "../../store/actions/index";
 
-// const Groups = [
-//   {
-//     id: 1,
-//     name: "Blake Group 1",
-//     time: "1:17 PM",
-//     members: ["John", "Blake", "Ryan", "Matt"]
-//   },
-//   {
-//     id: 2,
-//     name: "Random Group 2",
-//     time: "1:18 PM",
-//     members: ["Tim", "Tom", "Tyler", "Travis", "Todd"]
-//   },
-//   {
-//     id: 3,
-//     name: "Poop Scoop 3",
-//     time: "Yesterday",
-//     members: ["Sam", "Spencer"]
-//   },
-//   {
-//     id: 4,
-//     name: "Number 4",
-//     time: "May 10th",
-//     members: ["David", "Dale", "Drake", "Devon"]
-//   }
-// ];
-
 class GroupList extends Component {
   componentDidMount() {
     this.props.onFetchGroups();

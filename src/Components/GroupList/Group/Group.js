@@ -8,7 +8,7 @@ import classes from "./Group.css";
 const Group = props => {
   let attachedClasses = [classes.Group];
 
-  if (props.data === props.selectedGroup) {
+  if (props.id === props.selectedGroup) {
     attachedClasses = [classes.Group, classes.Selected];
   }
 
