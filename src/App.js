@@ -14,12 +14,17 @@ const asyncSettings = asyncComponent(() => {
   return import("./Containers/Settings/Settings");
 });
 
+const asyncProfile = asyncComponent(() => {
+  return import("./Containers/Profile/Profile");
+});
+
 class App extends Component {
   render() {
     const routes = (
       <Switch>
         <Route path="/createGroup" component={asyncCreateGroup} />
         <Route path="/settings" component={asyncSettings} />
+        <Route path="/profile" component={asyncProfile} />
         <Route path="/" component={GroupPage} />
       </Switch>
     );

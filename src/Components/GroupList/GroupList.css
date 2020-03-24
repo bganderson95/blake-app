@@ -7,9 +7,19 @@
   height: 100%;
 }
 
+.SideDrawerTop {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .GroupList h3 {
-  text-align: center;
-  color: green;
+  background: red;
+}
+
+.GroupList button {
+  background: blue;
 }
 
 .List {

@@ -5,9 +5,16 @@ import Button from "@material-ui/core/Button";
 
 const NavigationLink = props => {
   return (
-    <NavLink to={props.link} exact className={classes.NavigationItem}>
-      <Button>{props.children}</Button>
-    </NavLink>
+    <li>
+      <NavLink
+        to={props.link}
+        exact
+        className={classes.NavigationItem}
+        activeStyle={{ backgroundColor: "red" }}
+      >
+        <Button>{props.children}</Button>
+      </NavLink>
+    </li>
   );
 };
 

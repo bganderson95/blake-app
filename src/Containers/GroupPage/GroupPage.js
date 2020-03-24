@@ -9,15 +9,19 @@ class GroupPage extends Component {
     let GroupContent = <Header>Select a group to start</Header>;
 
     if (this.props.selectedGroup) {
+      //DON'T LIKE HOW THIS WORKS RN
+      const selected = this.props.selectedGroup;
+      const activeGroup = this.props.groups.filter(
+        group => group.id === selected
+      );
       GroupContent = (
         <div>
-          <Header>{this.props.selectedGroup.name}</Header>
-          <p>{this.props.selectedGroup.time}</p>
-          <p>{this.props.selectedGroup.id}</p>
-          <h6>Members</h6>
+          <Header>{activeGroup[0].Name}</Header>
+          <p>{activeGroup[0].Description}</p>
+          <h4>Members</h4>
           <ul>
-            {this.props.selectedGroup.members.map(member => (
-              <li>{member}</li>
+            {activeGroup[0].Members.map((member, index) => (
+              <li key={index}>{member}</li>
             ))}
           </ul>
         </div>
@@ -30,7 +34,8 @@ class GroupPage extends Component {
 
 const mapStateToProps = state => {
   return {
-    selectedGroup: state.selectedGroup
+    selectedGroup: state.groups.selectedGroup,
+    groups: state.groups.groups
   };
 };
 
