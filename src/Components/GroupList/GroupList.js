@@ -37,7 +37,10 @@ class GroupList extends Component {
           <h3>My Groups</h3>
           <Button>
             <Link to="/createGroup">
-              <AddCircleOutlineIcon />
+              <AddCircleOutlineIcon
+                fontSize="large"
+                style={{ color: "#bbb" }}
+              />
             </Link>
           </Button>
         </div>

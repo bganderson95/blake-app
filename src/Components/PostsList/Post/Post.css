@@ -1,26 +1,60 @@
 .Post {
-  width: 80%;
+  max-width: 90%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
   padding: 10px;
-  margin: 5px auto;
-  display: block;
-  box-sizing: border-box;
-  cursor: pointer;
-  transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  -webkit-transition: all 0.2s ease-in;
-  --o-transition: all 0.2s ease-in;
-  max-height: 90px;
-  border-radius: 20px;
-  background-color: #ccc;
-}
-
-.Post:hover {
   background-color: #eee;
+  justify-content: flex-start;
+  border-radius: 5px;
 }
 
-.Post div {
-  display: inline-block;
-  padding-left: 20px;
+.PostContent {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.SongDetails {
+  padding-left: 5px;
+  width: 70%;
+  text-align: start;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+}
+
+.SongDetails h4,
+.SongDetails p {
+  width: 100%;
+  margin: 1px;
+}
+
+.PostDetails {
+  width: 30%;
+}
+
+.PostDetails h4,
+.PostDetails p {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0px;
+}
+
+.Cover {
+  max-width: 100px;
+  max-height: 100px;
+}
+.Controls {
+  display: flex;
+  height: 100%;
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+
+.Button {
+  padding: 0px;
 }
 
 .Selected {

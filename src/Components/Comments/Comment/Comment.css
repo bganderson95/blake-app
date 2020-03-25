@@ -1,0 +1,16 @@
+.Comment {
+  margin: 2px;
+  padding: 2px;
+  text-align: start;
+  background-color: #ddd;
+  display: block;
+  box-sizing: border-box;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+h4,
+p {
+  padding: 0px;
+  margin: 0px;
+}

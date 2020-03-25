@@ -34,7 +34,7 @@ const fetchPostsSuccess = (state, action) => {
   });
 };
 
-//CREATE GROUP
+//MAKE POST
 const makePostStart = (state, action) => {
   return updateObject(state, {
     loading: true

@@ -1,12 +1,12 @@
-.PostsList {
-  margin: 0;
-  padding: 0;
+.CommentsList {
+  margin: 0px;
+  padding: 10px;
   list-style: none;
   display: flex;
   flex-flow: column;
   height: 100%;
 }
 
-.List {
-  padding: 0;
+ul {
+  margin: 0px;
 }

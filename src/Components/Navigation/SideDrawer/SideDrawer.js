@@ -48,7 +48,7 @@ export default function TemporaryDrawer() {
   return (
     <div>
       <Button onClick={toggleDrawer("left", true)}>
-        <MenuIcon />
+        <MenuIcon fontSize="large" style={{ color: "#bbb" }} />
       </Button>
       <Drawer open={state.left} onClose={toggleDrawer("left", false)}>
         {sideList("left")}

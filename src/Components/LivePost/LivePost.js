@@ -2,6 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import classes from "./LivePost.css";
+import SkipPreviousIcon from "@material-ui/icons/SkipPrevious";
+import PlayArrowIcon from "@material-ui/icons/PlayArrow";
+import SkipNextIcon from "@material-ui/icons/SkipNext";
 
 const livePost = props => {
   let livePostContent = null;
@@ -12,6 +15,9 @@ const livePost = props => {
         <Link to="/">
           <h4>{props.selectedPost}</h4>
         </Link>
+        <SkipPreviousIcon />
+        <PlayArrowIcon className={classes.PlayIcon} />
+        <SkipNextIcon />
       </div>
     );
   }

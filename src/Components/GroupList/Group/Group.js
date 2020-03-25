@@ -2,7 +2,7 @@ import React from "react";
 import * as actions from "../../../store/actions/index";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-import GroupLogo from "../../../assets/images/GroupLogo.png";
+import GroupImage from "../../../assets/images/Red.jpg";
 import classes from "./Group.css";
 
 const Group = props => {
@@ -15,7 +15,7 @@ const Group = props => {
   return (
     <li className={attachedClasses.join(" ")}>
       <Link to="/">
-        <img src={GroupLogo} alt={GroupLogo} />
+        <img src={GroupImage} alt="Group" />
         <div onClick={() => props.onSelectGroup(props.id)}>
           <h4>{props.name}</h4>
           <p>{props.description}</p>

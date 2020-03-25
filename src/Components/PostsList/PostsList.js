@@ -27,6 +27,7 @@ class PostsList extends Component {
               id={post.id}
               post={post.post}
               date={post.date}
+              comments={post.comments}
             />
           ))}
         </ul>

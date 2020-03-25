@@ -3,12 +3,15 @@ import { connect } from "react-redux";
 import Header from "../../Components/Header/Header";
 import MakePost from "../MakePost/MakePost";
 import PostsList from "../../Components/PostsList/PostsList";
-
 import classes from "./GroupPage.css";
 
 class GroupPage extends Component {
   render() {
-    let GroupContent = <Header>Select a group to start</Header>;
+    let GroupContent = (
+      <div>
+        <Header>Select a group to start</Header>
+      </div>
+    );
 
     if (this.props.selectedGroup) {
       //DON'T LIKE HOW THIS WORKS RN

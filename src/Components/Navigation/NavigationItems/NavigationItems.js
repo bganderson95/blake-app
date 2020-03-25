@@ -8,10 +8,10 @@ import classes from "./NavigationItems.css";
 const navigationItems = () => (
   <ul className={classes.NavigationItems}>
     <NavigationItem link="/profile">
-      <AccountCircleIcon />
+      <AccountCircleIcon fontSize="large" style={{ color: "#bbb" }} />
     </NavigationItem>
     <NavigationItem link="/settings">
-      <SettingsIcon />
+      <SettingsIcon fontSize="large" style={{ color: "#bbb" }} />
     </NavigationItem>
   </ul>
 );

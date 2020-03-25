@@ -1,5 +1,9 @@
 .NavigationItem {
-  padding: 10px;
+  margin: none;
+}
+
+.NavigationItem a {
+  margin: none;
 }
 
 .NavigationItem a.active {
