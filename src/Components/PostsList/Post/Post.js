@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import * as actions from "../../../store/actions/index";
 import { connect } from "react-redux";
 import CommentsList from "../../Comments/CommentsList";
+import { fixTime } from "../../../shared/utility";
 
 import IconButton from "@material-ui/core/IconButton";
 
@@ -66,7 +67,7 @@ class Post extends Component {
             </div>
           </div>
           <div className={classes.PostDetails}>
-            <h4>{this.props.date}</h4>
+            <h4>{fixTime(this.props.date)}</h4>
             <p>BA</p>
           </div>
         </div>

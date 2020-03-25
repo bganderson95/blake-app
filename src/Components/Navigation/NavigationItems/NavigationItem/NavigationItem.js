@@ -10,7 +10,7 @@ const NavigationLink = props => {
         to={props.link}
         exact
         className={classes.NavigationItem}
-        activeStyle={{ backgroundColor: "red" }}
+        // activeStyle={{ backgroundColor: "#eee" }}
       >
         <Button>{props.children}</Button>
       </NavLink>

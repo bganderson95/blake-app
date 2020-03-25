@@ -1,21 +1,11 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 import Button from "@material-ui/core/Button";
 import MenuIcon from "@material-ui/icons/Menu";
 import GroupList from "../../GroupList/GroupList";
-
-const useStyles = makeStyles({
-  list: {
-    width: 350
-  },
-  fullList: {
-    width: "auto"
-  }
-});
+import classes from "./SideDrawer.css";
 
 export default function TemporaryDrawer() {
-  const classes = useStyles();
   const [state, setState] = React.useState({
     top: false,
     left: false,
@@ -36,7 +26,7 @@ export default function TemporaryDrawer() {
 
   const sideList = side => (
     <div
-      className={classes.list}
+      className={classes.List}
       role="presentation"
       onClick={toggleDrawer(side, false)}
       onKeyDown={toggleDrawer(side, false)}

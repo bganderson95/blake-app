@@ -53,8 +53,12 @@
   justify-content: space-evenly;
 }
 
-.Button {
+button {
   padding: 0px;
+}
+
+button p {
+  font-size: 18px;
 }
 
 .Selected {

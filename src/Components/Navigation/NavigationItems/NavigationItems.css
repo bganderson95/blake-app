@@ -1,9 +1,18 @@
 .NavigationItems {
   margin: 0;
   padding: 0;
+  position: fixed;
+  left: 0;
+  height: 100%;
+  width: 64px;
+  overflow-x: hidden;
+  border-right: 1px solid #ccc;
+}
+
+.NavigationItems ul {
   list-style: none;
   display: flex;
   flex-flow: column;
   align-items: flex-start;
-  height: 100%;
+  padding: 0px;
 }

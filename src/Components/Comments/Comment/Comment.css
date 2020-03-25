@@ -1,12 +1,12 @@
 .Comment {
-  margin: 2px;
-  padding: 2px;
+  margin: 4px;
+  padding: 10px;
   text-align: start;
   background-color: #ddd;
   display: block;
   box-sizing: border-box;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 18px;
 }
 
 h4,
