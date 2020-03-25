@@ -4,9 +4,13 @@
   display: flex;
   flex-direction: column;
   padding: 10px;
-  background-color: #eee;
+  background-color: #ddd;
   justify-content: flex-start;
   border-radius: 5px;
+}
+
+.Post:hover {
+  background-color: #eee;
 }
 
 .PostContent {

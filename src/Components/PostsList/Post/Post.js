@@ -29,6 +29,7 @@ class Post extends Component {
   selectPostHandler = () => {
     if (this.props.id !== this.props.selectedPost) {
       this.props.onSelectPost(this.props.id);
+      this.setState({ showComments: false });
     }
   };
 
@@ -55,7 +56,8 @@ class Post extends Component {
               </IconButton>
 
               <IconButton onClick={() => this.commentToggleHandler()}>
-                {this.state.showComments ? <ChatIcon /> : <ChatOutlinedIcon />}
+                {/* {this.state.showComments ? <ChatIcon /> : <ChatOutlinedIcon />} */}
+                <ChatOutlinedIcon />
                 {this.props.comments ? (
                   <p>({Object.values(this.props.comments).length})</p>
                 ) : null}

@@ -9,6 +9,7 @@ class CommentList extends Component {
 
     return (
       <div className={classes.CommentsList}>
+        <hr noshade />
         {this.props.comments ? (
           <ul className={classes.List}>
             {Object.values(this.props.comments).map(comment => (
