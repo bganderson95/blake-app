@@ -23,12 +23,12 @@ class GroupPage extends Component {
         <div>
           <Header>{activeGroup[0].Name}</Header>
           <p>{activeGroup[0].Description}</p>
-          <h4>Members</h4>
+          {/* <h4>Members</h4>
           <ul>
             {activeGroup[0].Members.map((member, index) => (
               <li key={index}>{member}</li>
             ))}
-          </ul>
+          </ul> */}
           <PostsList />
           <MakePost />
         </div>

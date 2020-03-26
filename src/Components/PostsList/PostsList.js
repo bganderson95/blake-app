@@ -19,7 +19,6 @@ class PostsList extends Component {
   render() {
     let listContent = (
       <div>
-        <p>POSTS</p>
         <ul className={classes.List}>
           {this.props.posts.map(post => (
             <Post
